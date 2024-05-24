@@ -1,0 +1,140 @@
+@media (max-width:1200px){
+  .header__btn-order{
+    margin-left: 0;
+  }
+  .promo__links{
+    margin-left: 0;
+  }
+}
+@media (max-width:991.5px){
+  .container{
+    width: 720px;
+    margin: 0 auto;
+  }
+  .promo__header{
+    font-size: 28px;
+  }
+  .promo__subheader{
+    font-size: 20px;
+  }
+  .promo__icon{
+    margin-top: 40px;
+    margin-left: 26px;
+  }
+  .header__btn-order{
+    width: 215px;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  .promo__links{
+    margin-left: -40px;
+    font-size: 15px;
+  }
+  .benefits__header{
+    font-size: 24px;
+    line-height: 0;
+  }
+  .benefits__subheader{
+    font-size: 17px;
+  }
+  .benefits__text{
+    font-size: 13px;
+  }
+}
+@media (max-width:767.5px){
+  .container{
+    width: 540px;
+  }
+  .header{
+    &__number{
+      font-size: 14px;
+    }
+    &__btn{
+      width: 130px;
+    }
+    &__btn-order{
+      width: 200px;
+    }
+    &__text{
+      font-size: 13px;
+      span{
+        font-size: 17px;
+      }
+    }
+    &__img{
+      width: 210px;
+    }
+  }
+  .promo{
+    min-height: 600px;
+    &__header{
+      font-size: 25px;
+    }
+    &__subheader{
+      font-size: 18px;
+    }
+  }
+  .benefits{
+    &__wrapper{
+      flex-wrap: wrap;
+    }
+    &__items-ml{
+      margin:0 auto;      
+    }
+  }
+}
+@media (max-width:575.5px){
+  .container{
+    width: auto;
+  }
+  .header{
+    justify-content: space-arond;
+    &__text{
+      display: none;
+    }
+    &__btn{
+      width: 120px;
+      margin: 0;
+      font-size: 11px;
+    }
+    &__btn-order{
+      width: 150px;
+      margin-top: 45px;
+      font-size: 13px;
+    }
+    &__number{
+      font-weight: 100;
+      font-size: 14px;
+    }
+    &__img{
+      width: 190px;
+    }
+  }
+  .promo{
+    &__header{
+      margin-bottom: 0;
+      font-size: 21px;
+    }
+    &__wrapper{
+      margin-top: 75px;
+    }
+    &__subheader{
+      font-size: 17px;
+    }
+    &__info{
+      width: 100%;
+    }
+    &__text{
+      font-size: 15px;
+    }
+  }
+  .benefits{
+    &__items-flex{
+      height: auto;
+      margin-top: 30px;
+    }
+    &_wrapper{
+      margin-top: 40px;
+    }
+  }
+}
