@@ -8,10 +8,10 @@
 	box-sizing: border-box;
 	font-family: "Museo Sans Cyrl", sans-serif;
 }
-@import '/src/scss/base/mixins';
-@import '/src/scss/base/variables';
-@import '/src/scss/blocks/promo';
-@import '/src/scss/blocks/header';
-@import '/src/scss/blocks/benefits';
-@import '/src/scss/blocks/consultation';
+@import './base/mixins';
+@import './base/variables';
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/benefits';
+@import './blocks/consultation';
 @import 'media';
