@@ -40,6 +40,15 @@
   .benefits__text{
     font-size: 13px;
   }
+  .carousel{
+    padding: 50px 0;
+    &__inner{
+      width: 90%;
+      .prev{
+        display: none;
+      }
+    }
+  }
 }
 @media (max-width:767.5px){
   .container{
