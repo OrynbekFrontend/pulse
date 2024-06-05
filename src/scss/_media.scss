@@ -43,10 +43,16 @@
   .carousel{
     padding: 50px 0;
     &__inner{
-      width: 90%;
-      .prev{
-        display: none;
+      width: 700px;
+      img{
+        width: 100%;
       }
+    }
+    .slick-prev{
+      left: -35px;
+    }
+    .slick-next{
+      right: -60px;
     }
   }
 }
@@ -95,6 +101,9 @@
     &__items-flex{
       height: auto;
     }
+    .m0{
+      margin: 0 auto;
+    }
   }
   .consultation{
     padding-bottom: 0;
@@ -104,6 +113,15 @@
     }
     &__btn{
       width: 100%;
+    }
+  }
+  .carousel{
+    padding: 50px 0;
+    &__inner{
+      width: 570px;
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -160,9 +178,8 @@
     }
   }
   .benefits{
-    min-height: 620px;
     &__items-flex{
-      margin-top: 0;
+      margin-top: 10px;
     }
     &_wrapper{
       margin-top: 40px;
@@ -189,6 +206,11 @@
       text-align: center;
       width: 100%;
       margin-top: 31px;
+    }
+  }
+  .carousel{
+    &__inner{
+      width: 100%;
     }
   }
 }
