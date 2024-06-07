@@ -1,0 +1,54 @@
+.footer{
+  height: 630px;
+  position: relative;
+  &__info{
+    padding: 50px 0 56px 0;
+    width: 460px;
+    height: 270px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__address{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-bottom: 36px;
+  }
+  &__number{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 36px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 15px;
+      img{
+        height: 27px;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
