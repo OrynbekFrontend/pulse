@@ -141,6 +141,11 @@
       font-size: 16px;
     }
   }
+  .feedback{
+    &__text{
+      padding: 0;
+    }
+  }
 }
 @media (max-width:575.5px){
   .container{
@@ -251,10 +256,48 @@
       }
     }
   }
+  .feedback{
+    &__img{
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      display: block;
+    }
+    &__text{
+      margin-left: 10px;
+    }
+    &__item{
+      display: block;
+    }
+    &__text{
+      margin-top: 10px;
+    }
+  }
+  .footer{
+    &__info{
+      width: 90%;
+      padding-top: 35px;
+    }
+    &__address{
+      font-size: 19px;
+    }
+    &__number{
+      font-size: 19px;
+    }
+    &__social{
+      &-item{
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
 }
 @media(max-width:375px){
   li.lh{
     line-height: 25px;
+  }
+  .catalog__card{
+    width: 90%;
   }
 }
 @media(max-width:421px){
