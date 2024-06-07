@@ -291,6 +291,18 @@
       }
     }
   }
+  .modal{
+    width: 95%;
+    padding-left: 30px;
+    &__form{
+      input{
+        width: 85%;
+      }
+      button{
+        width: 85%;
+      }
+    }
+  }
 }
 @media(max-width:375px){
   li.lh{

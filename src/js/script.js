@@ -56,4 +56,32 @@ $(document).ready(function(){
       $('.catalog__card_wrapper_list').eq(i).toggleClass('catalog__card_wrapper_list_active');
     })
   })
+  //modal
+  $('[data-modal=consultation]').on('click', function(){
+    $('.overlay, #consultation').fadeIn();
+  });
+  $('.modal__close').on('click', function(){
+    $('.overlay, #consultation, #order, #thanks').fadeOut();
+  });
+
+  $('.catalog__btn').each(function(i){
+    $(this).on('click', function() {
+      $('#order .modal__descr').text($('.catalog__title').eq(i).text());
+      $('.overlay, #order').fadeIn();
+    })
+  });
+
+  $('.modal__close').on('click', function(){
+    $('.overlay, #order').fadeOut();
+  });
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {   // esc
+       $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    }
+  });
+  $(window).on('click', function(e) {
+    if (e.target.classList.contains('overlay')) {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    }
 });
+})
