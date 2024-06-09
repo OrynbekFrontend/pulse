@@ -69,10 +69,10 @@
     <div class="container">
           <h2 class="consultation__header">Получите бесплатную консультацию<br>по подбору пульсометра </h2>
           <div class="consultation__subheader">Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</div>
-          <form action="" class="consultation__form">
-            <input type="text" placeholder="Ваше имя">
-            <input type="number" placeholder="Ваш телефон">
-            <input type="email" placeholder="Ваш E-mail">
+          <form id="consultation__form" action="" class="consultation__form">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="phone" placeholder="Ваш телефон">
+            <input name="email" type="email" placeholder="Ваш E-mail">
             <button class="header__btn consultation__btn">заказать консультацию</button>
           </form>    
     </div>
@@ -618,9 +618,9 @@
     <div class="modal__subtitle">Просто заполните форму заявки</div>
     <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
     <form action="" class="consultation__form modal__form">
-      <input type="text" placeholder="Ваше имя">
-      <input type="number" placeholder="Ваш телефон">
-      <input type="email" placeholder="Ваш E-mail">
+      <input name="name" type="text" placeholder="Ваше имя">
+      <input name="phone" placeholder="Ваш телефон">
+      <input name="email" type="email" placeholder="Ваш E-mail">
       <button class="header__btn consultation__btn">заказать консультацию</button>
     </form>
   </div>
@@ -630,9 +630,9 @@
     <div class="modal__subtitle">Ваш заказ:</div>
     <div class="modal__descr">Пульсометр Polar FT1</div>
     <form action="" class="consultation__form modal__form">
-      <input type="text" placeholder="Ваше имя">
-      <input type="number" placeholder="Ваш телефон">
-      <input type="email" placeholder="Ваш E-mail">
+      <input name="name" type="text" placeholder="Ваше имя">
+      <input name="phone" placeholder="Ваш телефон">
+      <input name="email" type="email" placeholder="Ваш E-mail">
       <button class="header__btn consultation__btn">купить</button>
     </form>
   </div>
@@ -648,6 +648,8 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="src/js/slick.min.js"></script>
+  <script src="src/js/jquery.validate.min.js"></script>
+  <script src="src/js/jquery.maskedinput.min.js"></script>
   <script src="src/js/script.js"></script>
 </body>
 </html>

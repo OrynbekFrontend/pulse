@@ -2,7 +2,7 @@
 	min-height: 680px;
 	width: 100%;
 	padding: 100px 0 108px 0;
-	background: url('../src/img/bg2.png');
+	background: url('../src/img/bg2.png') center center/cover no-repeat;
 	&__form{
 		width: 303px;
 		display: flex;
@@ -38,5 +38,8 @@
 		font-weight: 500;
 		text-align: center;
 		margin: 17px 0 0 0;
+	}
+	label.error{
+		color: white;
 	}
 }
