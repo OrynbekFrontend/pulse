@@ -4,8 +4,8 @@ $(document).ready(function(){
     speed:300,
     dots: true,
     focusOnSelect: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="src/img/left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="src/img/right.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="./img/left.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./img/right.svg"></button>',
     responsive:[
       {
         breakpoint: 850,
@@ -42,20 +42,19 @@ $(document).ready(function(){
       .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
   });
 
-  $('.catalog__link').each(function(i) {
-    $(this).on('click', function(e){
-      e.preventDefault();
-      $('.catalog__card_wrapper_content').eq(i).toggleClass('catalog__card_wrapper_content_active');
-      $('.catalog__card_wrapper_list').eq(i).toggleClass('catalog__card_wrapper_list_active');
-    })
-  })
-  $('.catalog__card_wrapper_back').each(function(i) {
-    $(this).on('click', function(e){
-      e.preventDefault();
-      $('.catalog__card_wrapper_content').eq(i).toggleClass('catalog__card_wrapper_content_active');
-      $('.catalog__card_wrapper_list').eq(i).toggleClass('catalog__card_wrapper_list_active');
-    })
-  })
+  function toggleSlide(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            $('.catalog__card_wrapper_content').eq(i).toggleClass('catalog__card_wrapper_content_active');
+            $('.catalog__card_wrapper__ul').eq(i).toggleClass('catalog__card_wrapper__ul_active');
+        })
+    });
+};
+
+toggleSlide('.catalog__link');
+toggleSlide('.catalog__card_wrapper__ul_back');
+
   //modal
   $('[data-modal=consultation]').on('click', function(){
     $('.overlay, #consultation').fadeIn();
@@ -114,7 +113,7 @@ $(document).ready(function(){
     e.preventDefault();
     $.ajax({
       type: 'POST',
-      url: 'src/mailer/smart.php',
+      url: 'mailer/smart.php',
       data: $(this).serialize()
     }).done(function() {
       $(this).find('input').val('');
@@ -125,4 +124,15 @@ $(document).ready(function(){
     });
     return false;
   });
+
+  //scroll up button
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+  //wow js
+  new WOW().init();
 });

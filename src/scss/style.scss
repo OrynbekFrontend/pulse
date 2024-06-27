@@ -10,6 +10,7 @@
 }
 @import './base/mixins';
 @import './base/variables';
+@import './base/animation';
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/benefits';
@@ -19,4 +20,5 @@
 @import './blocks/feedback';
 @import './blocks/footer';
 @import './blocks/modal';
+@import './blocks/pageup';
 @import 'media';

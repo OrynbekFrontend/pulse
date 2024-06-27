@@ -36,6 +36,13 @@
 		width: 70px;
 		height: 70px;
 		margin: 0 auto;
+		&_animation{
+			animation: hearthbeat 1.5s ease 0s infinite;
+			// animation: name duration timing-function delay iteration-count direction fill-mode;
+			&:hover{
+				animation-play-state: paused;
+			}
+		}
 	}
 	&__items-flex{
 		height: auto;
